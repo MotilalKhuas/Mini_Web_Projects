@@ -1,0 +1,39 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    display : flex;
+    justify-content: center;
+    align-items : center;
+    height : 100vh;
+}
+
+.btn{
+  position : relative;
+  background-color: #e84949;
+  color : white;
+  border : none;
+  font-size: 1.125rem;
+  padding : 0.8rem 2.3rem;
+  box-shadow : 5px 5px 7px #0000003f;
+  z-index: 1;
+}
+
+.btn::before{
+    content : "";
+    position : absolute;
+    background-color: #1f1f1f;
+    left : 0;
+    top : 0;
+    height : 100%;
+    width : 0;
+    z-index: -1;
+    transition : width 0.5s;
+}
+
+.btn:hover::before{
+    width : 100%;
+}

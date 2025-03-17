@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotilalKhuas.com</title>
+    <link rel="icon" href="./Images/motilal.png">
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+            color:#3c3c3c;
+        }
+        body{
+            border : 1px solid black;
+            max-width:900px;
+            margin:auto; 
+            padding: 10px;
+        }
+        header{
+           background-color: aliceblue;
+        }
+        hr{
+            margin-top: 5px;
+        }
+        section{
+            margin:10px 0px;
+        }
+        .contact_info{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .contact_info:hover{
+            color:blue;
+            text-decoration: underline;
+        }
+        .contact_info_img{
+            height:30px; 
+            margin-right:5px
+        }
+        .education_table{
+            border-collapse: collapse;
+            width:100%;
+            margin-top:10px;
+            text-align: center;
+        }
+        .education_table th{
+            border : 1px solid black;
+            font-size: 18px;
+            height:30px;
+        }
+        .education_table td{
+            border : 1px solid black;
+            font-size: 16px;
+            height : 25px;
+        }
+        .course_list{
+            display: flex;
+            justify-content: space-around;
+            font-size: 16px;
+            margin-top: 10px;
+            padding: 0px 10px;
+        }
+        .company_details{
+            display:flex;
+            justify-content: space-between;
+            font-size: 18px;
+            margin: 10px 0px 3px 0px;
+        }
+        .position_details{
+            display:flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        .project_container{
+            padding: 0px 30px;
+            font-size: 16px;
+        }
+        .individual_project{
+            padding: 10px 0px 0px 0px;
+        }
+        .individual_project_name{
+            font-size: 17px;
+        }
+        .individual_project_desc{
+            font-weight: lighter;
+            padding:5px 0px 0px 15px;
+        }
+        .individual_project_desc li{
+            padding: 1px 0px;
+        }
+        .individual_project_tools{
+            padding-top: 5px;
+        }
+        .project_features{
+            padding-left:35px;
+        }
+        .project_features li{
+            padding: 1px 0px;
+        }
+        .skill_list{
+            list-style: none;
+            padding: 10px 10px;
+            font-size: 16px;
+        }
+        .skill_list li{
+            padding: 1.5px 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td>
+                    <img src="./Images/motilal.png" height="220px">
+                </td>
+                <td style="padding:5px; font-size: 16px;">
+                        <h1 style="margin-bottom: 10px 0px;">MOTILAL KHUAS</h1>
+
+                        <p style="margin: 10px 0px; text-align: justify;">
+                            Software Engineer | C++ Development Specialist | Expert in Backend Systems, Real-time Data Processing & Multi-Threaded Applications | Experienced in Crypto Trading Platforms & VMS Integration
+                        </p>
+
+                        <div style="margin : 10px 0px; font-size: 16px;">
+                            <a href="tel:+917735980085" class="contact_info" target="new">
+                                <span><img src="./Images/phone.png" class="contact_info_img"></span>
+                                +91 7735980085
+                            </a>
+    
+                            <a href="mailto:khuasmotilal57@gmail.com" class="contact_info" target="new">
+                                <img src="./Images/gmail.png" class="contact_info_img">
+                                khuasmotilal57@gmail.com
+                            </a>
+    
+                            <a href="https://www.linkedin.com/in/khuas/" class="contact_info" target="new">
+                                <img src="./Images/linkedin.png" class="contact_info_img">
+                                linkedin.com/in/khuas
+                            </a>
+                        </div>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <section>
+            <h2>Education</h2><hr>
+            <table class="education_table">
+                <tr>
+                    <th>Degree/Certificate</th>
+                    <th>Institute/Board</th>
+                    <th>CGPA/Percentage</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>B.Tech., ECE</td>
+                    <td>GIET University, Gunupur, Odisha</td>
+                    <td>8.47 CGPA</td>
+                    <td>2019- 2023</td>
+                </tr>
+                <tr>
+                    <td>Senior Secondary</td>
+                    <td>Yuvodaya H.S. School, Bolangir, Odisha</td>
+                    <td>66.13%</td>
+                    <td> 2017- 2019</td>
+                </tr>
+                <tr>
+                    <td>Secondary</td>
+                    <td>SSVM, Bolangir, Odisha</td>
+                    <td>87.33%</td>
+                    <td> 2016- 2017</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section>
+            <h2>Relevant Coursework</h2><hr>
+            <ul class="course_list">
+                <li>Data Structure</li>
+                <li>Algorithms Analysis</li>
+                <li>Database Management</li>
+                <li>Computer Organization</li>
+            </ul>
+        </section>
+
+
+        <section>
+            <h2> Experience</h2><hr>
+            <div class="company_details">
+                <h4>Oditek Solutions Pvt. Ltd</h4>
+                <p>March 2023 - Present</p>
+            </div>
+            <div class="position_details">
+                <p><i>Software Engineer Level- 2 [Enterprise(C++ Development)]</i></p>
+                <p><i>Bhubaneswar, Odisha</i></p>
+            </div>
+            <div class="project_container">
+                <ul>
+                   <li class="individual_project">
+                        <p class="individual_project_name"><b>3.0 Verse (Multi-market Crypto Trading Platform) (January 2024- Present)</b></p>
+                        <ul class="individual_project_desc">
+                            <li>Responsible for backend data processing for 3.0 Verse, a global digital super app unifying multiple cryptocurrency
+                                exchanges and Developed core logic in C++ and used MySQL for data storage.</li>
+                            <li>Leveraged BOOST and POCO libraries for web communication with open-source exchange servers.</li>
+                            <li>Implemented key features such as: User authentication, Wallet balance retrieval, Order placement, Real-time trading
+                                data monitoring using WebSocket for instant updates.</li>
+                            <li>Ensured secure communications through various hashing algorithms.</li>
+                        </ul>
+                        <p class="individual_project_tools"><b>Technologies and Key Concepts :</b> <i>C++, MySQL, WebSocket, Multi-Threading, REST APIs, Hashing Algorithms.</i></p>
+                    </li> 
+                   <li class="individual_project"> 
+                        <p class="individual_project_name"><b>TERMA Radar Integration in ViseTec VMS (October 2023- December 2023)</b></p>
+                        <ul class="individual_project_desc">
+                            <li>Integrated TERMA Radar with ViseTec VMS to enhance functionality and compatibility.</li>
+                            <li>Implemented WebSocket communication and multithreading to manage module interactions and achieve concurrency.</li>
+                            <li>Optimized performance by conducting strategic analysis of implementation methods.</li>
+                            <li>Conducted thorough unit testing on the latest source baseline to ensure system reliability.</li>
+                        </ul>
+                        <p class="individual_project_tools"><b>Technologies and Key Concepts :</b> <i>C++, MFC, WebSocket, Multi-Threading, Searching Algorithms</i></p>
+                    </li> 
+                </ul>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Personal Project</h2><hr>
+            <ul>
+                <div class="project_container">
+                    <li class="individual_project">
+                        <p class="individual_project_name"><b>Multi-Client Chat Application</b> | <i>C++, MFC, SQL, MultiThreading, Socket, BOOST</i></p>
+                        <ul class="individual_project_desc">
+                            <li>Developed a multi-client chat application allowing users to send and receive messages, enabling simultaneous
+                                connections for multiple clients to chat with each other.</li>
+                            <li>Implemented features for creating chat groups and rooms, enhancing user interaction and communication.</li>
+                            <li>Integrated the project with a database for data storage, ensuring efficient management of user information.</li>
+                        </ul>
+                        <p style="padding-top: 5px;"><b>Key Features:</b></i></p>
+                        <ul class="project_features">
+                            <li>Messages stored in an encoded format for enhanced security.</li>
+                            <li>Login information stored in an encoded format.</li>
+                            <li>Capable of handling multiple clients concurrently.</li>
+                            <li>Users can create and manage chat rooms.</li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills Summary</h2><hr>
+            <ul class="skill_list">
+                <li><b>Languages : </b> C, C++, python, SQL, HTML, CSS</li>
+                <li><b>Frameworks : </b>MicroSoft Fundamental Class, Tailwind CSS, Tkinter</li>
+                <li><b>Tools : </b>Excel, Visual Studio Code, Git</li>
+                <li><b> Soft Skills : </b>Problem Solving, Time Management, Team Work, Critical Thinking</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
