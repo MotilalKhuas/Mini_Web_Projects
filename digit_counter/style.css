@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    /* font-family: "Kanit", sans-serif; */
+    font-family: "Rubik", sans-serif;
+}
+
+#wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#heading{
+    font-size: 4.5rem;
+    color : #2c2c2c;
+}
+
+#result{
+    margin : 1.3rem 0;
+    font-size: 10rem;
+    color : rgb(131, 131, 131);
+}
+
+#button_group{
+    display : flex;
+    gap : 0.7rem;
+}
+
+#button_group > button{
+    padding : 0.7rem 1.5rem;
+    border : 1px solid #2c2c2c;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color : #2c2c2c;
+    background-color: white;
+}
+
+#button_group > button:hover{
+    background-color: rgb(238, 238, 238);
+}
