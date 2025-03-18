@@ -17,13 +17,13 @@
 }
 
 #heading{
-    font-size: 4.5rem;
+    font-size: 3rem;
     color : #2c2c2c;
 }
 
 #result{
     margin : 1.3rem 0;
-    font-size: 10rem;
+    font-size: 7.5rem;
     color : rgb(131, 131, 131);
 }
 
@@ -37,7 +37,7 @@
     border : 1px solid #2c2c2c;
     border-radius: 0.5rem;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color : #2c2c2c;
     background-color: white;
 }
