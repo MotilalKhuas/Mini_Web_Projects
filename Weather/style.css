@@ -153,6 +153,7 @@ body {
     gap : 1rem;
     height: auto;
     margin-top: 1rem;
+    text-wrap: nowrap;
 }
 
 #highlight-all-data-container > div{
@@ -189,6 +190,7 @@ body {
 
 #highlight-sunrise-sunset{
     grid-column : 3/5;
+    text-wrap: wrap;
 }
 
 #highlight-sunrise-sunset .flex-row > div{
@@ -197,7 +199,11 @@ body {
     gap : 1.5rem;
 }
 
-@media screen and (max-width :  1230px){
+#feels-like-temp sup {
+    font-size: var(--font-size-sm);
+}
+
+@media screen and (max-width :  1235px){
     html {
         font-size: 15px;
     }
@@ -215,7 +221,7 @@ body {
     }
 }
 
-@media screen and (max-width :  992px){
+@media screen and (max-width :  995px){
     html {
         font-size: 13px;
     }
@@ -233,7 +239,7 @@ body {
     }
 }
 
-@media screen and (max-width :  735px){
+@media screen and (max-width :  740px){
     #main-section > section{
         grid-column: 1/4;
     }
@@ -258,7 +264,7 @@ body {
         grid-column: 4/5;
     }
 
-    @media screen and (max-width :  575px){
+    @media screen and (max-width :  580px){
         html {
             font-size: 12px;
         }
@@ -277,7 +283,7 @@ body {
     }
 
 
-    @media screen and (max-width :  400px){
+    @media screen and (max-width :  405px){
         html {
             font-size: 11px;
         }
