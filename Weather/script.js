@@ -64,7 +64,6 @@ async function getCoordinates(loc){
 
 function liveLocation(){
     return new Promise((resolve, reject)=>{
-        
         navigator.geolocation.getCurrentPosition(
             (position)=>{
                 const lat = position.coords.latitude;
@@ -99,9 +98,9 @@ async function loadAllData(lat, lon){
 window.addEventListener("load", async()=>{
     try{
         let loc = await liveLocation();
-        loadAllData(loc.lat, loc.lon)
+        loadAllData(loc.lat, loc.lon);
     }
     catch(err){
         console.log(err.message);
     }
-})
+});

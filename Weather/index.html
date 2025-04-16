@@ -16,95 +16,145 @@
 <body>
     <div id="wrapper">
         <main id="main-section">
-            <section id="current-weather-section" class="section">
-                <h3 class="title-1">Now</h3>
-                <div id="current-temp"></div>
-                <div id="weather-status"></div>
-                <div id="underline"></div>
-                <div id="current-date"></div>
-                <div id="current-location"></div>
-            </section>
+            <div>
+                <section id="current-weather-section" class="section">
+                    <h3 class="title-1">Now</h3>
+                    <div id="current-temp"></div>
+                    <div id="weather-status"></div>
+                    <div id="underline"></div>
+                    <div id="current-date"></div>
+                    <div id="current-location"></div>
+                </section>
 
-            <section id="today-highlights-section" class="section">
-                <h3 class="title-1">Today's Highlights</h3>
-                <div id="highlight-all-data-container">
-                    <div id="highlight-air-quality">
-                        <h4 class="title-2">Air Quaity Index</h4>
-                        <div class="highlight-ind-data-container flex-row">
-                            <span class="material-symbols-outlined">air</span>
-                            <div class="flex-column">
-                                <h5 class="title-3">PM<sub>2.5</sub></h5>
-                                <p class="highlight-matrices" id = "particulate-matter-val"></p>
+                <div class="forcast-weather-section">
+                    <h3 class="title-1">5 Days Forecast</h3>
+                    <section class="section">
+                        <div class="future-weather-data">
+                            <div class="future-temp">
+                                <img src="./Assets/01d.png" class="future-weather-img">
+                                <p class="future-temp-val">36<sup>&deg;c</sup></p>
                             </div>
-                            <div class="flex-column">
-                                <h5 class="title-3">SO<sub>2</sub></h5>
-                                <p class="highlight-matrices" id = "sulfur-dioxide-val"></p>
+                            <div class="future-date">17 April</div>
+                            <div class="future-day">Thrusday</div>
+                        </div>
+                        <div class="future-weather-data">
+                            <div class="future-temp">
+                                <img src="./Assets/02d.png" class="future-weather-img">
+                                <p class="future-temp-val">36<sup>&deg;c</sup></p>
                             </div>
-                            <div class="flex-column">
-                                <h5 class="title-3">NO<sub>2</sub></h5>
-                                <p class="highlight-matrices" id = "nitrogen_dioxide-val"></p>
+                            <div class="future-date">18 April</div>
+                            <div class="future-day">Friday</div>
+                        </div>
+                        <div class="future-weather-data">
+                            <div class="future-temp">
+                                <img src="./Assets/13d.png" class="future-weather-img">
+                                <p class="future-temp-val">36<sup>&deg;c</sup></p>
                             </div>
-                            <div class="flex-column">
-                                <h5 class="title-3">O<sub>3</sub></h5>
-                                <p class="highlight-matrices" id = "ozone-val"></p>
+                            <div class="future-date">19 April</div>
+                            <div class="future-day">Saturday</div>
+                        </div>
+                        <div class="future-weather-data">
+                            <div class="future-temp">
+                                <img src="./Assets/04n.png" class="future-weather-img">
+                                <p class="future-temp-val">36<sup>&deg;c</sup></p>
                             </div>
+                            <div class="future-date">20 April</div>
+                            <div class="future-day">Sunday</div>
                         </div>
-                    </div>
-
-                    <div id="highlight-sunrise-sunset">
-                        <h4 class="title-2">Sunrise and Sunset</h4>
-                        <div class="highlight-ind-data-container flex-row">
-                           <div>
-                                <span class="material-symbols-outlined">clear_day</span>
-                                <div class="flex-column">
-                                    <h5 class="title-3">Sunrise</h5>
-                                    <p class="highlight-matrices" id="sunrise-time"></p>
-                                </div>
-                           </div>
-                            <div>
-                                <span class="material-symbols-outlined">clear_night</span>
-                                <div class="flex-column">
-                                    <h5 class="title-3">Sunset</h5>
-                                    <p class="highlight-matrices" id="sunset-time"></p>
-                                </div>
+                        <div class="future-weather-data">
+                            <div class="future-temp">
+                                <img src="./Assets/03n.png" class="future-weather-img">
+                                <p class="future-temp-val">36<sup>&deg;c</sup></p>
                             </div>
+                            <div class="future-date">21 April</div>
+                            <div class="future-day">Monday</div>
                         </div>
-                    </div>
-
-                    <div id="highlight-humidity">
-                        <h4 class="title-2">Humidity</h4>
-                        <div class="highlight-ind-data-container flex-row">
-                            <span class="material-symbols-outlined">humidity_percentage</span>
-                            <p class="highlight-matrices" id="humidity-val"></p>
-                        </div>
-                    </div>
-
-                    <div id="highlight-pressure">
-                        <h4 class="title-2">Pressure</h4>
-                        <div class="highlight-ind-data-container flex-row">
-                            <span class="material-symbols-outlined">airwave</span>
-                            <p class="highlight-matrices" id="pressure-val"></p>
-                        </div>
-                    </div>
-
-                    <div id="highlight-visibility">
-                        <h4 class="title-2">Visibility</h4> 
-                        <div class="highlight-ind-data-container flex-row">
-                            <span class="material-symbols-outlined">visibility</span>
-                            <p class="highlight-matrices" id="visibility-val"></p>
-                        </div>
-                    </div>
-
-                    <div id="highlight-feels-like">
-                        <h4 class="title-2">Feels Like</h4>
-                        <div class="highlight-ind-data-container flex-row">
-                            <span class="material-symbols-outlined">thermostat</span>
-                            <p class="highlight-matrices" id="feels-like-temp"></p>
-                        </div>
-                    </div>
-
+                    </section>
                 </div>
-            </section>
+            </div>
+
+            <div>
+                <section id="today-highlights-section" class="section">
+                    <h3 class="title-1">Today's Highlights</h3>
+                    <div id="highlight-all-data-container">
+                        <div id="highlight-air-quality">
+                            <h4 class="title-2">Air Quaity Index</h4>
+                            <div class="highlight-ind-data-container flex-row">
+                                <span class="material-symbols-outlined">air</span>
+                                <div class="flex-column">
+                                    <h5 class="title-3">PM<sub>2.5</sub></h5>
+                                    <p class="highlight-matrices" id = "particulate-matter-val"></p>
+                                </div>
+                                <div class="flex-column">
+                                    <h5 class="title-3">SO<sub>2</sub></h5>
+                                    <p class="highlight-matrices" id = "sulfur-dioxide-val"></p>
+                                </div>
+                                <div class="flex-column">
+                                    <h5 class="title-3">NO<sub>2</sub></h5>
+                                    <p class="highlight-matrices" id = "nitrogen_dioxide-val"></p>
+                                </div>
+                                <div class="flex-column">
+                                    <h5 class="title-3">O<sub>3</sub></h5>
+                                    <p class="highlight-matrices" id = "ozone-val"></p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="highlight-sunrise-sunset">
+                            <h4 class="title-2">Sunrise and Sunset</h4>
+                            <div class="highlight-ind-data-container flex-row">
+                               <div>
+                                    <span class="material-symbols-outlined">clear_day</span>
+                                    <div class="flex-column">
+                                        <h5 class="title-3">Sunrise</h5>
+                                        <p class="highlight-matrices" id="sunrise-time"></p>
+                                    </div>
+                               </div>
+                                <div>
+                                    <span class="material-symbols-outlined">clear_night</span>
+                                    <div class="flex-column">
+                                        <h5 class="title-3">Sunset</h5>
+                                        <p class="highlight-matrices" id="sunset-time"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div id="highlight-humidity">
+                            <h4 class="title-2">Humidity</h4>
+                            <div class="highlight-ind-data-container flex-row">
+                                <span class="material-symbols-outlined">humidity_percentage</span>
+                                <p class="highlight-matrices" id="humidity-val"></p>
+                            </div>
+                        </div>
+    
+                        <div id="highlight-pressure">
+                            <h4 class="title-2">Pressure</h4>
+                            <div class="highlight-ind-data-container flex-row">
+                                <span class="material-symbols-outlined">airwave</span>
+                                <p class="highlight-matrices" id="pressure-val"></p>
+                            </div>
+                        </div>
+    
+                        <div id="highlight-visibility">
+                            <h4 class="title-2">Visibility</h4> 
+                            <div class="highlight-ind-data-container flex-row">
+                                <span class="material-symbols-outlined">visibility</span>
+                                <p class="highlight-matrices" id="visibility-val"></p>
+                            </div>
+                        </div>
+    
+                        <div id="highlight-feels-like">
+                            <h4 class="title-2">Feels Like</h4>
+                            <div class="highlight-ind-data-container flex-row">
+                                <span class="material-symbols-outlined">thermostat</span>
+                                <p class="highlight-matrices" id="feels-like-temp"></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </section>
+            </div>
             
         </main>
     </div>

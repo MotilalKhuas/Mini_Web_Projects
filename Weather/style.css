@@ -86,7 +86,6 @@ body {
 .flex-column{
     display : flex;
     flex-direction: column;
-    /* align-items: center; */
     gap : 0.6rem;
 }
 
@@ -203,6 +202,66 @@ body {
     font-size: var(--font-size-sm);
 }
 
+
+/* ============================ WEATHER FORCAST ========================== */
+/* ======================================================================= */
+
+
+.forcast-weather-section{
+    margin-top: 2rem;
+}
+
+.forcast-weather-section > h3{
+    margin-bottom : 0.5rem;
+}
+
+.forcast-weather-section > section{
+    display: flex;
+    flex-direction: column;
+    gap : 0.5rem;
+}
+
+.future-weather-data{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.future-temp{
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    gap : 0.5rem;
+}
+
+.future-weather-img{
+    height: 2.5rem;
+    width : 2.5rem;
+}
+
+.future-temp-val{
+    font-size: var(--font-size-md);
+}
+
+.future-date{
+    font-size: var(--font-size-xsm);
+    text-align: center;
+    color : var(--tertiary-text-color);
+}
+
+.future-day{
+    font-size: var(--font-size-xsm);
+    text-align: right;
+    color : var(--tertiary-text-color);
+    width : 25%;
+}
+
+
+
+/* ========================== RESPONSIVE NESS ========================= */
+/* ======================================================================= */
+
+
 @media screen and (max-width :  1235px){
     html {
         font-size: 15px;
@@ -240,7 +299,7 @@ body {
 }
 
 @media screen and (max-width :  740px){
-    #main-section > section{
+    #main-section > div{
         grid-column: 1/4;
     }
 
